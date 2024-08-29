@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>Willian</groupId>
+    <artifactId>ProjetoMaven</artifactId>
+    <version>1</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <exec.mainClass>willian.projetomaven.ProjetoMaven</exec.mainClass>
+        <!-- SonarQube properties -->
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.login>sqp_73b424882e3b5241b54d8abeea89eb697caea65c</sonar.login>
+        <sonar.projectKey>teste</sonar.projectKey>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- SonarQube Plugin -->
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>4.0.0.4121</version>
+            </plugin>
+            <!-- Other plugins can be added here -->
+        </plugins>
+    </build>
+</project>
